@@ -16,7 +16,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-top: 26px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
 }
 .header-logo {
     display: block;
@@ -28,6 +28,7 @@ header {
 }
 .header-nav {
     list-style-type: none;
+    margin: 6px 96px 0 0;
     display: flex;
     padding-left: 0;
     gap: 46px;
@@ -59,11 +60,12 @@ header {
     background-color: transparent;
     border: none;
     padding: 0;
-    gap: 10px;
+    gap: 9px;
     cursor: pointer;
 }
 .button-item {
     position: relative;
+    margin-top: 1px;
 }
 .button-count {
     font-weight: 700;
@@ -71,13 +73,13 @@ header {
     color: #ffffff;
     background: #f37335;
     border-radius: 100%;
-    position: absolute;
+    position: absolute; 
     height: 17px;
     width: 17px;
     text-align: center;
     line-height: 1.3;
-    bottom: 3px;
-    right: -4px;
+    bottom: 2px;
+    right: -6px;
 }
 .button-text {
     color: #443737;
@@ -137,37 +139,31 @@ header {
     margin: 0 auto;
 }
 .banner-box {
-    background-image: url(../image/banner.jpg);
-    background-size: cover;
-    width: 1180px;
-    height: 438px;
+    max-width: 1180px;
+    display: block;
     margin: auto;
-    align-items: center;
-    position: relative;
+    background-image: url(../image/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0px;
+    margin-bottom: 67px;
 }
-/*
-.banner-container {
-    position: absolute;
-    width: 353px;
-    height: 238px;
-    
-} 
-*/
 .banner-title {
     font-weight: 900;
     font-size: 60px;
-    line-height: 76px;
     color: #ffffff;
     display: block;
-    padding-top: 100px;
     padding-left: 100px;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 14px;
 }
 .discount {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
+    text-transform: uppercase;
     color: #ffffff;
     background: #f37335;
     width: 95px;
@@ -179,33 +175,129 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 6px;
 }
 .banner-text {
-    padding-left: 100px;
     width: 320px;
     height: 48px;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #FAF9F9;
+    padding-left: 100px;
     margin: 0;
 }
 .banner-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: flex-start;
-    height: 58px;
-    width: 170px;
+    margin-left: 100px;
+    display: inline-block;
+    padding: 20px 26px;
     background: #FBB731;
     border-radius: 5px;
     margin-top: 15px;
-    margin-left: 100px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1E2F40;
+    cursor: pointer;
+}
+.menu-headr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-title {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1B2A49;
+}
+.menu-select {
+    margin-top: 3px;
+    border: 1px solid #dedede;
+    padding: 13px 30 px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;
+    flex-basis: 249px;
+    background-image: url(../image/arrow.svg);
+    background-size: 12.79px 7.75px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+}
+.menu-grid-item {
+    width: 100%;
+    height: 579px;
+    position: relative;
+    overflow: hidden;
+}
+.menu-grid-cover {
+    position: absolute;
+    left: 50%;
+   /* top: 50%; */
+    transform: translate(-50%, 0%);
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
+.menu-grid-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    display: block;
+    text-align: center;
+    margin: 0%;
+    margin-top: 454px;
+    padding-bottom: 9px;
+}
+.menu-grid-price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 22px;
+}
+.menu-grid-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-basis: auto;
+    width: 150px;
+    height: 38px;
+    align-items: center;
+    align-content: center;
+    gap: 9px;
+    background: #FBB731;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.menu-grid-icon {
+    background-image: url(../image/icart.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+.menu-grid-text {
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     color: #1E2F40;
-    cursor: pointer;
+}
+.menu {
+    margin-bottom: 67px;
 }
