@@ -18,6 +18,12 @@ header {
     padding-top: 26px;
     padding-bottom: 27px;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
 .header-logo {
     display: block;
     background-image: url(../image/logo.svg);
@@ -28,7 +34,7 @@ header {
 }
 .header-nav {
     list-style-type: none;
-    margin: 6px 96px 0 0;
+    margin: 6px 0 0 0;
     display: flex;
     padding-left: 0;
     gap: 46px;
@@ -190,7 +196,7 @@ header {
 .banner-link {
     margin-left: 100px;
     display: inline-block;
-    padding: 20px 26px;
+    padding: 19px 24px;
     background: #FBB731;
     border-radius: 5px;
     margin-top: 15px;
@@ -200,6 +206,11 @@ header {
     text-decoration: none;
     color: #1E2F40;
     cursor: pointer;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .menu-headr {
     display: flex;
@@ -215,7 +226,7 @@ header {
 .menu-select {
     margin-top: 3px;
     border: 1px solid #dedede;
-    padding: 13px 30 px;
+    padding: 13px 30px;
     border-radius: 22px;
     color: #443737;
     font-size: 15px;
@@ -267,8 +278,6 @@ header {
 }
 .menu-grid-btn {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     flex-basis: auto;
     width: 150px;
@@ -281,6 +290,9 @@ header {
     border-radius: 5px;
     margin: 0 auto;
     cursor: pointer;
+}
+.menu-grid-btn:hover {
+    background-color: #F37335;
 }
 .menu-grid-icon {
     background-image: url(../image/icart.svg);
@@ -305,7 +317,7 @@ header {
     background: #1E2F40;
     color: white;
     padding-top: 117px;
-    padding-bottom: 106px;
+    padding-bottom: 135px;
     margin-top: 140px;
 }
 .footer-box {
@@ -319,14 +331,18 @@ header {
 .footer-item {
     flex: 0 0 auto;
 }
+.footer-list {
+    padding-left: 0;
+    list-style-type: none;
+}
 .footer-item h2 {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 19px;
-    margin-top: 0;
+    margin-top: 3px;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -334,10 +350,13 @@ header {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
     color: #dedede;
     text-decoration: none;
     font-weight: 400;
+}
+.footer-list a:hover {
+    color: #fbb731;
 }
 .footer-item span {
     color: #dedede;
@@ -345,16 +364,18 @@ header {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel {
+    margin-top: 4px;
+}
+.footer-list-tel li {
+    margin-bottom: 13px;
+    border: none;
+}
+.footer-list-tel a {
     font-size: 20px;
     font-weight: 900;
     color: #fbb731;
-    margin-top: 0;
 }
-.footer-tel li {
-    margin-bottom: 12px;
-}
-.footer-list {
-    padding-left: 0;
-    list-style-type: none;
+.footer-list-tel a:hover {
+    color: #ffffff;
 }
