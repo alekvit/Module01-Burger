@@ -465,11 +465,11 @@ header {
     background-position: center;
 }
 .promo-left {
-    background-image: url(../Image/index/promo-left.png);
+    background-image: url(../image/index/promo-left.png);
     padding: 103px 50px;
 }
 .promo-right {
-    background-image: url(../Image/index/promo-right.png);
+    background-image: url(../image/index/promo-right.png);
     padding: 105px 49px;
 }
 .sale {
